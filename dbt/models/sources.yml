@@ -1,0 +1,34 @@
+version: 2
+
+sources:
+  - name: raw
+    database: USER_DB_KOALA         
+    schema: RAW
+    description: "Schema which stores raw tables (ETL)"                  
+    tables:
+      - name: stock_price_amazon_meta
+        identifier: stock_price_amazon_meta
+        description: "Raw stock price data for Amazon and Meta"
+        columns:
+          - name: SYMBOL
+            description: "ticker symbol"
+          - name: DATE
+            description: "Trading date"
+          - name: OPEN
+            description: "Opening price"
+          - name: CLOSE
+            description: "Closing price"
+          - name: HIGH
+            description: "Highest price of the day"
+          - name: LOW
+            description: "Lowest price of the day"
+          - name: VOLUME
+            description: "Daily trading volume"
+
+
+
+
+
+
+
+
