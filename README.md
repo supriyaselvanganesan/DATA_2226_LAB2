@@ -16,8 +16,43 @@ The goal is to demonstrate a data engineering pipeline covering:
 * BI tool access (Preset)
 
 ### Steps
-* Configure Airflow connections (Snowflake, API)
-* Run Airflow and enable the ETL DAG
-* dbt DAG executes after ETL
-* Validate transformed tables in Snowflake
-* Link the BI tool to Snowflake and build visualizations
+#### Configure Airflow Connections
+  * Before running the pipeline, configure the required Airflow connections in the Airflow UI:
+  * 1.1. Create Snowflake Connection
+  * In Airflow UI → Admin → Connections → + Add
+  * Use these fields:
+  * * Conn ID: snowflake_conn
+    * Conn Type: Snowflake
+    * Account: <your_account>
+User: <your_username>
+Password: <your_password>
+Warehouse: <your_warehouse>
+Database: <your_database>
+Schema: <your_schema>
+Role: <your_role>
+
+* Start Airflow Services
+http://localhost:8081
+
+Daily ETL DAG Automatically Runs
+ our ETL DAG contains a schedule
+
+dbt DAG Executes Automatically After ETL
+   tasks are :
+   dbt run
+   dbt test
+   dbt snapshot
+* Validate Transformed Tables in Snowflake
+  select * from USER_DB_KOALA.ANALYTICS.STOCK_PRICE_TECHNICAL_INDICATORS
+  select * from USER_DB_KOALA.SNAPSHOT.STOCK_PRICE_SNAPSHOT
+   
+* Link the BI tool to Snowflake and build visualizations using preset
+
+  Full Automated Daily Pipeline
+
+Once everything is enabled:
+
+✔ ETL loads new raw data daily
+✔ dbt runs right after ETL
+✔ BI dashboards refresh when queries run
+✔ Pipeline is fully automated
