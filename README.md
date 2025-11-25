@@ -15,7 +15,7 @@ The goal is to demonstrate a data engineering pipeline covering:
 * dbt-snowflake installed
 * BI tool access (Preset)
   
-* Security note: never commit real credentials. Use Airflow Connections, environment variables, or a secrets backend.
+* Security note: never commit real credentials. Use Airflow Connections or variables.
 ### Steps
 #### 1. Configure Airflow Connections
   * Before running the pipeline, configure the required Airflow connections in the Airflow UI:
