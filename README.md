@@ -37,22 +37,20 @@ The goal is to demonstrate a data engineering pipeline covering:
 #### 3. Daily ETL DAG Automatically Runs
 * our ETL DAG contains a schedule
 
-#### dbt DAG Executes Automatically After ETL
+#### 4. dbt DAG Executes Automatically After ETL
    * tasks are :
    * * dbt run
      * dbt test
      * dbt snapshot
-* Validate Transformed Tables in Snowflake
-  select * from USER_DB_KOALA.ANALYTICS.STOCK_PRICE_TECHNICAL_INDICATORS
-  select * from USER_DB_KOALA.SNAPSHOT.STOCK_PRICE_SNAPSHOT
+#### 5. Validate Transformed Tables in Snowflake
+  * select * from USER_DB_KOALA.ANALYTICS.STOCK_PRICE_TECHNICAL_INDICATORS
+  * select * from USER_DB_KOALA.SNAPSHOT.STOCK_PRICE_SNAPSHOT
    
-* Link the BI tool to Snowflake and build visualizations using preset
+#### 6. Link the BI tool to Snowflake and build visualizations using preset
 
-  Full Automated Daily Pipeline
-
-Once everything is enabled:
-
-ETL loads new raw data daily
-dbt runs right after ETL
-BI dashboards refresh when queries run
-Pipeline is fully automated
+1. Full Automated Daily Pipeline
+* Once everything is enabled:
+* * ETL loads new raw data daily
+  * dbt runs right after ETL
+  * BI dashboards refresh when queries run
+  * Pipeline is fully automated
