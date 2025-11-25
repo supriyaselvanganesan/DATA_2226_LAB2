@@ -60,7 +60,7 @@ The goal is to demonstrate a data engineering pipeline covering:
   * BI dashboards refresh when queries run
   * Pipeline is fully automated
  
-###Output
+### Output
 <img width="1017" height="684" alt="Screenshot 2025-11-24 at 11 40 38 PM" src="https://github.com/user-attachments/assets/2177fe5e-f853-45e1-bbff-f1f4f50309a3" />
 
  
