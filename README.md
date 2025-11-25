@@ -1,4 +1,4 @@
-# Lab- 2: Building an end to end Data Analytics using Snowflake, Airflow, dbt, and a BI tool
+# Lab- 2: Building an end to end Data Analytics using Snowflake, Airflow, dbt, and BI tool
 
 This project implements an end-to-end ELT data analytics workflow using Apache Airflow, Snowflake, dbt, and preset.
 The goal is to demonstrate a data engineering pipeline covering:
