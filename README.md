@@ -62,7 +62,8 @@ The goal is to demonstrate a data engineering pipeline covering:
  
 ### Output
 <img width="1017" height="684" alt="Screenshot 2025-11-24 at 11 40 38 PM" src="https://github.com/user-attachments/assets/2177fe5e-f853-45e1-bbff-f1f4f50309a3" />
-![WhatsApp Image 2025-11-25 at 14 03 13](https://github.com/user-attachments/assets/e8be801a-050a-44c7-9351-70f822396819)
+<img width="1237" height="383" alt="image" src="https://github.com/user-attachments/assets/35582b8c-541c-4a36-850d-4708403046d4" />
+
 
 
 
