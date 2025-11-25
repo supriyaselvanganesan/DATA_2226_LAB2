@@ -14,7 +14,7 @@ The goal is to demonstrate a data engineering pipeline covering:
 * Snowflake account
 * dbt-snowflake installed
 * BI tool access (Preset)
-
+Security note: never commit real credentials. Use Airflow Connections, environment variables, or a secrets backend.
 ### Steps
 #### 1. Configure Airflow Connections
   * Before running the pipeline, configure the required Airflow connections in the Airflow UI:
@@ -32,7 +32,11 @@ The goal is to demonstrate a data engineering pipeline covering:
     * Role: <your_role>
 
 #### 2. Start Airflow Services
-* http://localhost:8081
+   - docker compose up -d
+   - Wait for Airflow webserver & scheduler to be healthy.
+* Open the Airflow UI in your browser. Default ports depend on the compose file; common defaults:
+     - http://localhost:8080 or http://localhost:8081
+   - Check docker-compose.yaml for the exact port the webserver maps to.
 
 #### 3. Daily ETL DAG Automatically Runs
 * our ETL DAG contains a schedule
@@ -54,3 +58,17 @@ The goal is to demonstrate a data engineering pipeline covering:
   * dbt runs right after ETL
   * BI dashboards refresh when queries run
   * Pipeline is fully automated
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
