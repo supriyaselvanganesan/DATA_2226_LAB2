@@ -48,7 +48,7 @@ The goal is to demonstrate a data engineering pipeline covering:
    
 #### 6. Link the BI tool to Snowflake and build visualizations using preset
 
-1. Full Automated Daily Pipeline
+### Full Automated Daily Pipeline
 * Once everything is enabled:
 * * ETL loads new raw data daily
   * dbt runs right after ETL
